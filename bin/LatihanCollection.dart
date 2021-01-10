@@ -55,4 +55,27 @@ void main(){
 
 // union: {1, 2, 4, 5, 7}
 // intersection: {1, 5}
+
+  // MAP
+  //collection yang dapat menyimpan data dengan format key-value.
+  var capital = {
+    'Jakarta': 'Indonesia',
+    'London': 'England',
+    'Tokyo': 'Japan'
+  };
+
+  print(capital['Jakarta']);
+  // Output: Indonesia
+
+  var mapKeys = capital.keys;
+  // mapKeys = (Jakarta, London, Tokyo)
+
+  var mapValues = capital.values;
+  // mapValues = (Indonesia, England, Japan)
+
+  // menambahkan key-value baru
+  capital['New Delhi'] = 'India';
+  print(capital);
+  // Output: {Jakarta: Indonesia, London: England, Tokyo: Japan, New Delhi: India}
+
 }
